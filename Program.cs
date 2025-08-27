@@ -1,11 +1,31 @@
 ﻿namespace tehtava;
+using System.Text.Json;
 
 class Program
 {
+
+    static void Save(double prosentti)
+    {
+        string dirName = DateTime.Now.ToString("dd-MM-yyyy");
+        string baseDir = AppContext.BaseDirectory;
+        string fullDirPath = Path.Combine(baseDir, dirName);
+
+        if (!Directory.Exists(fullDirPath))
+        {
+            Directory.CreateDirectory(fullDirPath);
+        }
+        string resultFile = Path.Combine(fullDirPath, "tulokset.json");
+        var resultObj = new { Prosentti = prosentti };
+        string json = JsonSerializer.Serialize(resultObj);
+        File.WriteAllText(resultFile, json);
+    }
+    
+    
     static void Main(string[] args)
     {
         int oikeatmaara = 0;
-        string tiedosto = "alkuaineet.txt";
+        string tiedosto = Path.Combine(AppContext.BaseDirectory, "alkuaineet.txt");
+
         if (!File.Exists(tiedosto))
         {
             Console.WriteLine("Tiedostoa ei löytynyt: " + tiedosto);
@@ -60,5 +80,9 @@ class Program
         double prosentti = (oikeatmaara /5.0) * 100;
         Console.WriteLine($"\nSait oikein {oikeatmaara}/5 ({prosentti:F1}%)"); // toi F1 estää liiallisia numeroita kuten 66.6666
         Console.WriteLine("\n------------Tulokset------------");
+        Save(prosentti);
     }
 }
+
+
+
