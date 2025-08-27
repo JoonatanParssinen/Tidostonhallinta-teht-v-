@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6F6R6UazGTc=",
+  "dgSpecHash": "oG6DVtZJ+LY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Leevi\\OneDrive\\Tiedostot\\GitHub\\Tidostonhallinta-teht-v-\\tehtava.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/Heino/RiderProjects/Tidostonhallinta-teht-v-/tehtava.csproj",
+  "expectedPackageFiles": [
+    "/home/Heino/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.7/microsoft.aspnetcore.app.ref.9.0.7.nupkg.sha512"
+  ],
   "logs": []
 }
