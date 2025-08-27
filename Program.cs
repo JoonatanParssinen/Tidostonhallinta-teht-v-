@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        int oikeatmaara = 0;
         string tiedosto = "alkuaineet.txt";
         if (!File.Exists(tiedosto))
         {
@@ -34,8 +35,30 @@ class Program
             }
             if (listContainsSame == false)
             {
-                valitut.Add(vastaus);
+                if (eka20.Contains(vastaus))
+                {
+                    valitut.Add(vastaus);
+                    oikeatmaara++;
+                    // oikein, jippii, hurraa!!
+                }
+                else
+                {
+                    valitut.Add(vastaus);
+                    // väääääääääääääääärin
+                }
             }
         }
+        Console.WriteLine("\n------------Tulokset------------\n");
+        foreach (string vastaus in valitut)
+        {
+            if (eka20.Contains(vastaus))
+                Console.WriteLine("[OIKEIN]  " + vastaus);
+            else
+                Console.WriteLine("[VÄÄRIN]  " + vastaus);
+        }
+
+        double prosentti = (oikeatmaara /5.0) * 100;
+        Console.WriteLine($"\nSait oikein {oikeatmaara}/5 ({prosentti:F1}%)"); // toi F1 estää liiallisia numeroita kuten 66.6666
+        Console.WriteLine("\n------------Tulokset------------");
     }
 }

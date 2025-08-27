@@ -1,0 +1,15 @@
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\bin\Debug\net9.0\tehtava.exe
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\bin\Debug\net9.0\tehtava.deps.json
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\bin\Debug\net9.0\tehtava.runtimeconfig.json
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\bin\Debug\net9.0\tehtava.dll
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\bin\Debug\net9.0\tehtava.pdb
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\tehtava.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\tehtava.AssemblyInfoInputs.cache
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\tehtava.AssemblyInfo.cs
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\tehtava.csproj.CoreCompileInputs.cache
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\tehtava.sourcelink.json
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\tehtava.dll
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\refint\tehtava.dll
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\tehtava.pdb
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\tehtava.genruntimeconfig.cache
+C:\Users\Leevi\OneDrive\Tiedostot\GitHub\Tidostonhallinta-teht-v-\obj\Debug\net9.0\ref\tehtava.dll
