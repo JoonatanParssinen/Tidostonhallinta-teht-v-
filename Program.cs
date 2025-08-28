@@ -19,7 +19,7 @@ class Program
         string json = JsonSerializer.Serialize(resultObj);
         if (File.Exists(resultFile) == false)
         {
-            File.WriteAllText(resultFile, $"[\n{json}\n");
+            File.WriteAllText(resultFile, $"[\n{json}\n]");
 
         }
         else
@@ -171,6 +171,7 @@ class Program
 
     }
 }
+
 
 
 
