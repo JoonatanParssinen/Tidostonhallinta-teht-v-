@@ -122,7 +122,7 @@ class Program
 
                 if (dirs.Length > 0)
                 {
-
+                    int tuloksetYhteensa = 0;
                     Console.WriteLine("\n--- [ Viime tulokset ] ---\n");
 
                     foreach (string dir in dirs)
@@ -143,10 +143,17 @@ class Program
 
                         foreach (string rivi in tulokset)
                         {
-                            string[] Split = rivi.Split(":");
-                            Console.WriteLine(Split[1].Remove(Split[1].Length - 1) + "%");
+                            if (!rivi.Contains(':'))
+                            {
+                                continue;
+                            }
+                            
+                            string[] tulos = rivi.Split(",");
+                            string[] pala = tulos[0].Split(":");
+                            int prosentti = Convert.ToInt32(pala[1].Trim().TrimEnd('}', ']'));
+                            tuloksetYhteensa += prosentti;
                         }
-
+                        Console.WriteLine("Keskiarvo: " + tuloksetYhteensa / (tulokset.Count - 2));
                         Console.Write("\n");
 
                     }
