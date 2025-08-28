@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/Heino/RiderProjects/Tidostonhallinta-teht-v-/tehtava.csproj": {}
+    "C:\\Users\\Kayttaja\\Documents\\GitHub\\Tidostonhallinta-teht-v-\\tehtava.csproj": {}
   },
   "projects": {
-    "/home/Heino/RiderProjects/Tidostonhallinta-teht-v-/tehtava.csproj": {
+    "C:\\Users\\Kayttaja\\Documents\\GitHub\\Tidostonhallinta-teht-v-\\tehtava.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/Heino/RiderProjects/Tidostonhallinta-teht-v-/tehtava.csproj",
+        "projectUniqueName": "C:\\Users\\Kayttaja\\Documents\\GitHub\\Tidostonhallinta-teht-v-\\tehtava.csproj",
         "projectName": "tehtava",
-        "projectPath": "/home/Heino/RiderProjects/Tidostonhallinta-teht-v-/tehtava.csproj",
-        "packagesPath": "/home/Heino/.nuget/packages/",
-        "outputPath": "/home/Heino/RiderProjects/Tidostonhallinta-teht-v-/obj/",
+        "projectPath": "C:\\Users\\Kayttaja\\Documents\\GitHub\\Tidostonhallinta-teht-v-\\tehtava.csproj",
+        "packagesPath": "C:\\Users\\Kayttaja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kayttaja\\Documents\\GitHub\\Tidostonhallinta-teht-v-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/Heino/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Kayttaja\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -54,18 +54,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[9.0.7, 9.0.7]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
