@@ -17,14 +17,20 @@ class Program
         string resultFile = Path.Combine(fullDirPath, "tulokset.json");
         var resultObj = new { Prosentti = prosentti };
         string json = JsonSerializer.Serialize(resultObj);
-        ;
         if (File.Exists(resultFile) == false)
         {
-            File.Create(resultFile);
+            File.WriteAllText(resultFile, $"[\n{json}\n");
+
         }
-        using (StreamWriter sw = File.AppendText(resultFile))
+        else
         {
-            sw.WriteLine(json);
+            var lines = File.ReadAllLines(resultFile);
+            File.WriteAllLines(resultFile, lines.Take(lines.Length - 1).ToArray());
+            using (StreamWriter sw = File.AppendText(resultFile))
+            {
+                sw.Write(",");
+                sw.Write($"\n{json}\n]");
+            }
         }
     }
     
@@ -165,6 +171,7 @@ class Program
 
     }
 }
+
 
 
 
