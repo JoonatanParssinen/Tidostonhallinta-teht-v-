@@ -4,7 +4,7 @@ using System.Text.Json;
 class Program
 {
 
-    static void Save(double prosentti)
+        static void Save(double prosentti)
     {
         string dirName = DateTime.Now.ToString("dd-MM-yyyy");
         string baseDir = AppContext.BaseDirectory;
@@ -24,13 +24,11 @@ class Program
         }
         else
         {
-            var lines = File.ReadAllLines(resultFile);
-            File.WriteAllLines(resultFile, lines.Take(lines.Length - 1).ToArray());
-            using (StreamWriter sw = File.AppendText(resultFile))
-            {
-                sw.Write(",");
-                sw.Write($"\n{json}\n]");
-            }
+            var lines = File.ReadAllLines(resultFile).ToList();
+            lines.RemoveAt(lines.Count - 1);
+            lines[lines.Count - 1] += ",";
+            lines.Add($"{json}\n]");
+            File.WriteAllLines(resultFile, lines);
         }
     }
     
@@ -171,6 +169,7 @@ class Program
 
     }
 }
+
 
 
 
