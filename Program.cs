@@ -1,4 +1,4 @@
-﻿namespace tehtava;
+namespace tehtava;
 using System.Text.Json;
 
 class Program
@@ -42,6 +42,7 @@ class Program
             Console.WriteLine("----------------------------");
             Console.WriteLine("Haluatko pelata (p)");
             Console.WriteLine("Vai tarkastella tuloksia (t)");
+            Console.WriteLine("Haluatko lopettaa ohjelman (e)");
             Console.WriteLine("----------------------------\n");
 
             string rep = Console.ReadLine();
@@ -112,7 +113,7 @@ class Program
 
                 Save(prosentti);
 
-                break;
+                continue;
 
             }
             else if (rep.ToLower() == "t")
@@ -147,7 +148,7 @@ class Program
                             {
                                 continue;
                             }
-                            
+
                             string[] tulos = rivi.Split(",");
                             string[] pala = tulos[0].Split(":");
                             int prosentti = Convert.ToInt32(pala[1].Trim().TrimEnd('}', ']'));
@@ -167,15 +168,19 @@ class Program
                 }
 
             }
-            else
+            else if (rep.ToLower() == "e")
             {
-                Console.WriteLine("Valitse joko P tai T!");
+                Console.WriteLine("---------[ Kiitos pelaamisesta ]---------");
+                break;
             }
+
+            
 
         }
 
     }
 }
+
 
 
 
